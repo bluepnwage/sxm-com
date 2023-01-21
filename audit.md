@@ -38,6 +38,7 @@ Here is an example of the on search bar when it's not focused:
 ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674326191/sxm-com/non-focused-input_ldwr1z.png)
 
 And here the browser is natively indicating that the search bar is being focused:
+
 ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674326190/sxm-com/focused-input_yhkloi.png)
 
 For the icons below, the browser is not able to indicate that one of the icons are being focused. When this happens, it is up to the developer to manually apply styles to elements that are focusable.
