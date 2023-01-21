@@ -33,7 +33,7 @@ Responsive design is a technique used to created layouts that can _respond_ to a
 
 Although it's common for most users on a desktop to navigate a website with a mouse, there are certain cases where someone might only have a keyboard. In a situation like this, users will use <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> to move forward on backwards on a website from one focusable element to the next. By default, when an element is focused it will be outlined in black. This is to help users visually identify where they are currently on the website.
 
-Here is an example of the on search bar when it's not focused:
+Here is an example of a search bar when it's not focused:
 
 ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674326191/sxm-com/non-focused-input_ldwr1z.png)
 
