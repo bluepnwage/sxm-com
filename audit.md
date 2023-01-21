@@ -5,6 +5,7 @@
 3. [Images](#images)
 4. [Responsive Design](#responsive-web-design)
 5. [Focus management](#focus-management)
+6. [Other]()
 
 ## HTTP & HTTPS
 
@@ -40,3 +41,22 @@ And here the browser is natively indicating that the search bar is being focused
 ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674326190/sxm-com/focused-input_yhkloi.png)
 
 For the icons below, the browser is not able to indicate that one of the icons are being focused. When this happens, it is up to the developer to manually apply styles to elements that are focusable.
+
+## Other
+
+- Images do not have an `alt` attribute. This is used to show alternative text in the event where an image fails to download. It is also useful to provide context on an image for users who are visually impaired.
+  Ex:
+  In the images below, the source to one of the images was manually removed. This is to help illustrate what happens when an image that's failed to load does not contain alternative text.
+
+  **Image with no alternative text:**
+
+  ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674335960/sxm-com/alt-image_tubjo6.png)
+
+  **Image with alternative text:**
+
+  ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674335961/sxm-com/alt-image-text_hp47af.png)
+
+- Links do not have a discernible name. When links do not contain any text (like when a link wraps an icon), it is up to the developer to tell the browser what the link might be used for. Otherwise, screen readers won't be able to annouce links to users.
+  Ex:
+  In the image below, most people will be able to visually tell what these icons are for, however, a screen reader will not.
+  ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674335733/sxm-com/links-screenshot_c9qij7.png)
