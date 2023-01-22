@@ -5,7 +5,7 @@
 3. [Images](#images)
 4. [Responsive Design](#responsive-web-design)
 5. [Focus management](#focus-management)
-6. [Other]()
+6. [Other](#other)
 
 ## HTTP & HTTPS
 
