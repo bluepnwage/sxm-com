@@ -1,6 +1,6 @@
 # Table of contents
 
-1. [HTTP & HTTPS](#http)
+1. [HTTP & HTTPS](#http--https)
 2. [Lang attribute](#lang-attributes)
 3. [Images](#images)
 4. [Responsive Design](#responsive-web-design)
