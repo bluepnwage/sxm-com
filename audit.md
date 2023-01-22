@@ -29,9 +29,19 @@ In addition to trying to serve smaller sized images, they should also be **lazy 
 
 Responsive design is a technique used to created layouts that can _respond_ to any screen width and display content properly. Without it, users might have a hard time navigating through a website since they would have to manually zoom in to the bits of the website they might find interesting. One way to ensure a website can be responsive on mobile devices, is by including a [viewport](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag) meta tag, which tells browsers to make the width of the content on a page, the same width as the users' device.
 
+Here is an example of how a website would look without the viewport meta tag on an iPhone SE:
+
+![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674426609/sxm-com/mobile-no-viewport_o39zam.jpg)
+
+And here is that same example with the inclusion of the viewport meta tag:
+
+![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674426223/sxm-com/mobile-viewport_js0qoh.png)
+
+Although there's still some work to do for the website to be fully responsive, it is still a step forward towards providing a good experience for users on mobile.
+
 ## Focus management
 
-Although it's common for most users on a desktop to navigate a website with a mouse, there are certain cases where someone might only have a keyboard. In a situation like this, users will use <kbd>Tab</kbd> and <kbd>Shift + Tab</kbd> to move forward on backwards on a website from one focusable element to the next. By default, when an element is focused it will be outlined in black. This is to help users visually identify where they are currently on the website.
+Although it's common for most users on a desktop to navigate a website with a mouse, there are certain cases where someone might only have a keyboard. In a situation like this, users will use <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> to move forward on backwards on a website from one focusable element to the next. By default, when an element is focused it will be outlined in black. This is to help users visually identify where they are currently on the website.
 
 Here is an example of a search bar when it's not focused:
 
