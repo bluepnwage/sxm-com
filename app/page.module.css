@@ -1,0 +1,26 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, min-content));
+  grid-auto-rows: 100px;
+  gap: 1rem;
+  /* background-color: aqua; */
+}
+
+.grid div:nth-child(n + 5):nth-child(-n + 7) {
+  width: 100%;
+  background-color: red;
+}
+
+.grid div:nth-child(-n + 4) {
+  width: 200px;
+  background-color: aliceblue;
+}
+
+.grid div:nth-child(n + 8) {
+  width: 240px;
+  background-color: blueviolet;
+}
+
+/* .grid div:nth-child(even) {
+  grid-row: span 2;
+} */

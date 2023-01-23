@@ -1,0 +1,16 @@
+.navBar {
+  background-color: var(--main-bg);
+  display: flex;
+}
+
+.header {
+  display: flex;
+}
+
+.nav > *:not(:last-child) {
+  margin-right: 5px;
+}
+
+.nav > * {
+  display: inline-block;
+}
