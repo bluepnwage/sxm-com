@@ -72,3 +72,28 @@ For the icons below, the browser is not able to indicate that one of the icons a
   In the image below, most people will be able to visually tell what these icons are for, however, a screen reader will not.
 
   ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674335733/sxm-com/links-screenshot_c9qij7.png)
+
+## Changes
+
+- Add Favicon
+- Search bar, displays search results in a very disorganized manner
+- Emphasis on search bar, with Auto-completion to search keywords
+- Classify serach results by type (if articles classified under 'one' articles tab)
+
+### Navbar
+
+- Each element on the navbar is actually a link that redirects to #
+- Each element is actually a dropdown (make this more obvious)
+
+### Menu ''
+
+### Page 'Le président'
+
+- The President's Speech is not th same for both laguages
+- The President's speech is in 2 different languages and should have a button to switch between them.
+- The downloadable file has no business being there
+- Put all 'Délégations' under one menu
+
+## Questions
+- who updates the website ?
+- 
