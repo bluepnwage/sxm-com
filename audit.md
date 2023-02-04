@@ -85,15 +85,13 @@ For the icons below, the browser is not able to indicate that one of the icons a
 - Each element on the navbar is actually a link that redirects to #
 - Each element is actually a dropdown (make this more obvious)
 
-### Menu ''
-
 ### Page 'Le président'
 
-- The President's Speech is not th same for both laguages
-- The President's speech is in 2 different languages and should have a button to switch between them.
+- The Presidents speech is in 2 different languages and should have a button to switch between them.
 - The downloadable file has no business being there
 - Put all 'Délégations' under one menu
 
 ## Questions
-- who updates the website ?
-- 
+
+- How is the website updated
+-
