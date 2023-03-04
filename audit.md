@@ -73,25 +73,8 @@ For the icons below, the browser is not able to indicate that one of the icons a
 
   ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674335733/sxm-com/links-screenshot_c9qij7.png)
 
-## Changes
 
-- Add Favicon
-- Search bar, displays search results in a very disorganized manner
-- Emphasis on search bar, with Auto-completion to search keywords
-- Classify serach results by type (if articles classified under 'one' articles tab)
 
-### Navbar
 
-- Each element on the navbar is actually a link that redirects to #
-- Each element is actually a dropdown (make this more obvious)
 
-### Page 'Le président'
 
-- The Presidents speech is in 2 different languages and should have a button to switch between them.
-- The downloadable file has no business being there
-- Put all 'Délégations' under one menu
-
-## Questions
-
-- How is the website updated
--
