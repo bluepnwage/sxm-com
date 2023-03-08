@@ -1,0 +1,13 @@
+## Images
+
+Images on a website should try to be served using next-gen formats such as
+[WebP](https://developers.google.com/speed/webp) since it on average can be 25-35% smaller than JPEG images,
+26% smaller than PNG images and still provide great quality.
+
+![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674320257/sxm-com/images-screenshot_zipxi3.png)
+
+In addition to trying to serve smaller sized images, they should also be **lazy loaded**. Lazy loading is a
+technique where you download resources only as their needed.
+This can significantly improve the performance of a website since the browser
+no longer needs to download every image at once. You would typically lazy load images that aren't
+immediately visible, since users won't be able to see them once the page first loads.
