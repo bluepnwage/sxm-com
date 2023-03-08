@@ -15,6 +15,8 @@
     "cva": "npm:class-variance-authority@^0.4.0",
     "framer-motion": "^8.5.2",
     "next": "13.1.4",
+    "nextra": "^2.2.18",
+    "nextra-theme-docs": "^2.2.18",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

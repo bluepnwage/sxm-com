@@ -1,0 +1,67 @@
+import { Callout, Tabs, Tab } from "nextra-theme-docs";
+import { Hotkey } from "../components/Hotkey";
+
+Ensuring a website is accessible is crucial for providing a good user experience for **every** visitor of your website.
+
+## Image alt tags
+
+An `alt` attribute on an image is used to show alternative text in the event where the browser fails
+to download an image.
+It is also useful to provide context on an image for users who are visually impaired. Without this attribute, screen
+readers will try to read the name of the file as alternative text which isn't helpful.
+
+In the example below, the source to one of the images was manually removed. This is to help illustrate what happens when an image that's failed to load does not contain alternative text.
+
+<Tabs items={['Missing alt text', 'Included alt text']}>
+    <Tab>
+    ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674335960/sxm-com/alt-image_tubjo6.png)
+    </Tab>
+    <Tab>
+    ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674335961/sxm-com/alt-image-text_hp47af.png)
+    </Tab>
+
+</Tabs>
+
+<Callout type="info">
+  In certain cases it's okay to omit alternative text, however, the `alt` attribute should *always* be
+  included. This can be achieved by including an empty `alt` attribute (`alt=""`). Doing this will inform
+  screen readers to ignore an image rather than trying to read the name of the image file.
+</Callout>
+
+## Focus management
+
+Although it's common for most users on a desktop to navigate a website with a mouse,
+there are certain cases where someone might only have a keyboard. In a situation like this,
+users will use <Hotkey>Tab</Hotkey> and <Hotkey>Shift</Hotkey> + <Hotkey>Tab</Hotkey> to move forward
+on backwards on a website from one focusable element to the next. By default, when an element is focused,
+the browser will outline the element in black. This is to help users visually identify where they are currently on the website.
+
+<Tabs items={["Unfocused search bar", "Focused search bar"]}>
+  <Tab>
+    ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674326191/sxm-com/non-focused-input_ldwr1z.png)
+  </Tab>
+  <Tab>
+    ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674326190/sxm-com/focused-input_yhkloi.png)
+  </Tab>
+</Tabs>
+
+For the icons below, the browser is not able to indicate that one of the icons are being focused.
+When this happens, it is up to the developer to manually apply styles to elements that are focusable.
+
+## Links
+
+When links do not contain any text (like when a link wraps an icon), developers must manually
+provide labels for those links . Otherwise, screen readers won't be able to annouce links to users.
+
+As an example, in the image below, most users will be able to visually tell what these icons represent and what purpose they serve.
+However, a screen reader will not read these links and thus will skip them.
+
+![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674335733/sxm-com/links-screenshot_c9qij7.png)
+
+## Lang attribute
+
+The `lang` attribute is used to determine the main language of a website. It can help search engines
+understand the language and serve it to users in search results, and it allows screen readers
+to properly pronounce text.
+
+![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674319072/sxm-com/pagespeed.web.dev_report_url_http2F2F_form_factor_desktop_exgux7.png)

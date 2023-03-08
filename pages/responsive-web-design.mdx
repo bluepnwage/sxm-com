@@ -1,0 +1,23 @@
+import { Tabs, Tab, Callout } from "nextra-theme-docs";
+
+Responsive design is a technique used to created layouts that can _respond_ to any screen width and
+display content properly. Without it, users might have a hard time navigating through a website since
+they would have to manually zoom in to the bits of the website they might find interesting. One way to
+ensure a website can be responsive on mobile devices, is by including a
+[viewport](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag) meta tag, which
+tells browsers to make the width of the content on a page, the same width as the users' device.
+
+In the example below, you can see how the website is rendered with and without the viewport meta tag on an iPhone SE.
+
+<Tabs items={["Missing viewport meta tag", "Included viewport meta tag"]}>
+  <Tab>
+    ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674426609/sxm-com/mobile-no-viewport_o39zam.jpg)
+  </Tab>
+  <Tab>
+    ![image](https://res.cloudinary.com/bluepnwage/image/upload/v1674426223/sxm-com/mobile-viewport_js0qoh.png)
+  </Tab>
+</Tabs>
+<Callout type="info">
+  Although there's still some work to do for the website to be fully responsive, it is still a step forward
+  towards providing a good experience for users on mobile.
+</Callout>
