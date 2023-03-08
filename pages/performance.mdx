@@ -11,3 +11,9 @@ technique where you download resources only as their needed.
 This can significantly improve the performance of a website since the browser
 no longer needs to download every image at once. You would typically lazy load images that aren't
 immediately visible, since users won't be able to see them once the page first loads.
+
+As you can see in the image below, 30 images are being downloaded by the browser on initial page load. This
+is resulting in 24MB of images being sent over the network when the user is only seeing 3 images when they land on
+the website for the Collectivité.
+
+![image](/network.png)
