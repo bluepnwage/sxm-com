@@ -1,3 +1,7 @@
 {
-  "http": "HTTP & HTTPS"
+  "http": "HTTP & HTTPS",
+  "performance": "Performance",
+  "accessibility": "Accessibility",
+  "responsive-web-design": "Responsive Web Design",
+  "other": "Other"
 }
