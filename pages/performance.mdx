@@ -1,3 +1,5 @@
+import { Tabs, Tab } from "nextra-theme-docs";
+
 ## Images
 
 Images on a website should try to be served using next-gen formats such as
@@ -13,7 +15,10 @@ no longer needs to download every image at once. You would typically lazy load i
 immediately visible, since users won't be able to see them once the page first loads.
 
 As you can see in the image below, 30 images are being downloaded by the browser on initial page load. This
-is resulting in 24MB of images being sent over the network when the user is only seeing 3 images when they land on
+results in 24MB of images being sent over the network, when the user only sees 3 images when they land on
 the website for the Collectivité.
 
-![image](/network.png)
+<Tabs items={["Network Requests", "Landing page"]}>
+  <Tab>![image](/network.png)</Tab>
+  <Tab>![image](/landing-page.png)</Tab>
+</Tabs>

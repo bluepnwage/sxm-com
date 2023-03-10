@@ -40,8 +40,16 @@ for screen readers.
 Although it's common for most users on a desktop to navigate a website with a mouse,
 there are certain cases where someone might only have a keyboard. In a situation like this,
 users will use <Hotkey>Tab</Hotkey> and <Hotkey>Shift</Hotkey> + <Hotkey>Tab</Hotkey> to move forward
-on backwards on a website from one focusable element to the next. By default, when an element is focused,
-the browser will outline the element in black. This is to help users visually identify where they are currently on the website.
+on backwards on a website from one focusable element to the next.
+
+Some examples of focuseable elements are:
+
+- Buttons
+- Links
+- Form inputs
+
+By default when an element is focused, the browser will outline it in black. This is to help users
+visually identify where they are currently on the website.
 
 <Tabs items={["Unfocused search bar", "Focused search bar"]}>
   <Tab>![image](/non-focused-input.png)</Tab>
@@ -53,7 +61,7 @@ When this happens, it is up to the developer to manually apply styles to element
 
 ## Links
 
-When links do not contain any text (like when a link wraps an icon), developers must manually
+When links do not contain any text (when a link wraps an icon for example), developers must manually
 provide labels for those links . Otherwise, screen readers won't be able to annouce links to users.
 
 As an example, in the image below, most users will be able to visually tell what these icons represent and what purpose they serve.
