@@ -1,7 +1,10 @@
 import { Callout, Tabs, Tab } from "nextra-theme-docs";
 import { Hotkey } from "../components/Hotkey";
 
-Ensuring a website is accessible is crucial for providing a good user experience for **every** visitor of your website.
+When developing a website, they are official guidelines called _Web Content Accessiblity Guidelines_ (WCAG) which set standards
+on how websites should be built. These guidelines are maintained by The
+[_World Wide Web Consortium_](https://www.w3.org/) (W3C) to help improve accessiblity for users with disabilities
+or low-end devices.
 
 ## Image alt tags
 
@@ -58,10 +61,24 @@ However, a screen reader will not read these links and thus will skip them.
 
 ![image](/links-screenshot.png)
 
+## Color contrast
+
+When working with colors, it is important to measure the contrast between background and foreground content
+to ensure legibility. In most cases, good color contrast can be established by having a dark background and
+light foreground (or light background and dark foreground). Doing this is not only helpful for all of your users,
+but can also help users with color blindness, since they will perceive colors differently.
+
+In the navigation bar, the text color is `#F1F1F1` and the background in `#28A6D2`.
+
+![Screenshot of contrast audit for the Collectivités website](/contrast.png)
+
+There isn't sufficient contrast between the two colors and as a consequence, the website is failing the WCAG
+guidelines.
+
+![Contrast check for navigation bar](/adobe-contrast.png)
+
 ## Lang attribute
 
 The `lang` attribute is used to determine the main language of a website. It can help search engines
 understand the language and serve it to users in search results, and it allows screen readers
 to properly pronounce text.
-
-![image](/pagespeed.png)
