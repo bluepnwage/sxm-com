@@ -1,7 +1,20 @@
+const icon = <img src={"/logo-icon.svg"} width={35} height={35} style={{ marginRight: 5 }} />;
+
 export default {
-  logo: <span>SXM COM Audit</span>,
+  logo: (
+    <>
+      {icon}
+      <span>SXM COM Audit</span>
+    </>
+  ),
+  docsRepositoryBase: "https://github.com/bluepnwage/sxm-com",
   project: {
     link: "https://github.com/bluepnwage/sxm-com"
+  },
+  useNextSeoProps() {
+    return {
+      titleTemplate: "%s – SXM COM Audit"
+    };
   },
   primaryHue: 150,
   footer: {
