@@ -59,6 +59,36 @@ visually identify where they are currently on the website.
 For the icons below, the browser is not able to indicate that one of the icons are being focused.
 When this happens, it is up to the developer to manually apply styles to elements that are focusable.
 
+## Buttons
+
+There are two types of clickable elements, buttons and links.
+
+Links are used when you need to direct someone to a different page on a website, and buttons when you
+want to perform an action when something is clicked.
+
+Sometimes developers try to implement their own button without using the built-in button element in HTML so it can
+be easier to style it however they see fit. This is troublesome however, since now you lose the necessary
+properties an element needs to be marked as a button.
+
+Here are a few things you will miss out on when implementing your own button:
+
+- The button can no longer be focused and therefore will be skipped when navigating with a keyboard
+- There won't be a label associated with the custom button so screen readers won't be able to read out what
+  purpose the button serves
+- It won't have a button role which results in screen readers not knowing that the element is supposed to be a
+  button
+
+In the first example below, the button for the search bar has all the necessary properties to
+be considered a button. In the carousel, the previous and next icons aren't semantically buttons an therefore won't
+function and be interpreted like a native button.
+
+<Tabs items={["Built-in button", "Simulated button"]}>
+  <Tab>![example of using the built-in button element for websites](/organic-button.png)</Tab>
+  <Tab>
+    ![](/simulated-button.png) <br /> ![](/simulated-button2.png)
+  </Tab>
+</Tabs>
+
 ## Links
 
 When links do not contain any text (when a link wraps an icon for example), developers must manually
@@ -81,7 +111,7 @@ In the navigation bar, the text color is `#F1F1F1` and the background in `#28A6D
 ![Screenshot of contrast audit for the Collectivités website](/contrast.png)
 
 There isn't sufficient contrast between the two colors and as a consequence, the website is failing the WCAG
-guidelines.
+guidelines for contrast ratio.
 
 ![Contrast check for navigation bar](/adobe-contrast.png)
 

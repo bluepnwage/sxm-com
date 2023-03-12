@@ -22,3 +22,23 @@ the website for the Collectivité.
   <Tab>![image](/network.png)</Tab>
   <Tab>![image](/landing-page.png)</Tab>
 </Tabs>
+
+## JavaScript
+
+JavaScript is a scripting language mainly used for websites to make them interactive. The more JavaScript
+you write, the more you can make a website feel like a desktop or mobile application. This does come with a cost,
+JavaScript in most cases is the leading contributor to slowing down a website since the browser neeeds to:
+
+- Download your script files
+- Evaluate them to check for errors
+- Execute the code
+
+Depending on the size of your JavasScript files, this process could end up blocking the main thread of your browser
+and temporarily freeze the website.
+
+There are 4 main ways to avoid this issue:
+
+- Writing efficient code
+- Decreasing the size of your main bundle
+- Implement code splitting to only download necessary code
+- Offloading the download of certain scripts to [web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)

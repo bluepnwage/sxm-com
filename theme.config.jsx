@@ -1,4 +1,12 @@
-const icon = <img src={"/logo-icon.svg"} width={35} height={35} style={{ marginRight: 5 }} />;
+const icon = (
+  <img
+    src={"/logo-icon.svg"}
+    width={35}
+    height={35}
+    alt={"Logo for Bluepnwage Enterprises"}
+    style={{ marginRight: 5 }}
+  />
+);
 
 export default {
   logo: (
