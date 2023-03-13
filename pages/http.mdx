@@ -1,7 +1,5 @@
 import { Callout } from "nextra-theme-docs";
 
-## HTTP & HTTPS
-
 **HyperText Transfer Protocol** (HTTP), is a protocol that allows communication between browsers and servers.
 It is the foundation of how data is transferred on the web. However, HTTP alone is unencrypted,
 which poses as a security risk for users since personal information is at a risk of being stolen.
@@ -13,10 +11,12 @@ Here is a simplified diagram which represents the communication between client a
 
 ![Diagram of communication between client and server](/http-diagram.png)
 
-Here is a screenshot of Google Chrome showing a warning that the website is not secure.
+Here is a screenshot of Google Chrome showing a warning when a website is not secure.
 
 ![Browser showing website is not secured](/not-secure.png)
 
 <Callout>
-
+  Most of the time your hosting provider will handle setting up HTTPS for you. If that's not an option, then
+  you can easily do it yourself with [Let's Encrypt](https://letsencrypt.org/) for free. There is no real
+  reason for a website to not use HTTPS especially if you value your users' privacy.
 </Callout>
