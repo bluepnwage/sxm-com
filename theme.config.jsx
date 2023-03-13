@@ -36,7 +36,7 @@ export default {
         >
           Agis Carty
         </a>
-        , <time dateTime={new Date().toString()}>{new Date().getFullYear()}</time>.
+        , <time>{new Date().getFullYear()}</time>.
       </span>
     )
   }
