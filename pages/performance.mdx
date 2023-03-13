@@ -40,5 +40,24 @@ There are 4 main ways to avoid this issue:
 
 - Writing efficient code
 - Decreasing the size of your main bundle
-- Implement code splitting to only download necessary code
+- Implement [code splitting](https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting) to only download necessary code
 - Offloading the download of certain scripts to [web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
+
+For the Collectivités website, there is almost 1MB of JavaScript that's being downloaded. Around 600KB of that
+JavaScript is from a Youtube script to play videos.
+
+<Tabs items={["Total JavaScript size", "Youtube player size"]}>
+  <Tab>![image](/javascript.png)</Tab>
+  <Tab>![image](/unused-javascript.png)</Tab>
+</Tabs>
+
+The issue with all this JavaScript that's being downloaded is that it's not necassary for when a user first lands
+on the website. Instead, it should have been loaded when a user clicks on the button to show the video.
+
+This image shows the video that is slowing down the performance of the website. As you can see, the video only drops
+down when the card that controls it is clicked. This would have been a perfect opportunity to load the code on demand.
+
+<Tabs items={["Card closed", "Card opened"]}>
+  <Tab>![video](/video-closed.png)</Tab>
+  <Tab>![video](/video-opened.png)</Tab>
+</Tabs>
